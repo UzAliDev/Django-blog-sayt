@@ -6,8 +6,8 @@
     <h2>Saytga kirish</h2>
     <form method="post">{% csrf_token %}
         {{ form|crispy }}
-        <button type="submit" class="btn btn-warning">Kirish</button>
-        <a class="btn btn-outline-danger" href="{% url 'password_reset' %}" role="button">Kalit o'zgartirish</a>
+        <button type="submit" class="btn btn-primary">Kirish</button>
+        <a class="btn btn-outline-info" href="{% url 'password_reset' %}" role="button">Kalit o'zgartirish</a>
     </form>
 
 {% endblock content %}
