@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Bosh sahifa{% endblock title %}
+{% block content %}
+    {% if user.is_authenticated %}
+    <div class="card w-50">
+      <h5 class="card-header">UzAliDev</h5>
+      <div class="card-body">
+        <h5 class="card-title">Assalomu alaykum</h5>
+        <h2 class="card-title">{{ user.username }}</h2>
+        <p class="card-text">Saytimizga xush kelibsiz</p>
+        <a href="{% url 'article_list' %}" class="btn btn-primary">Postlarni ko'rish</a>
+      </div>
+    </div>
+    {% else %}
+    <div class="card">
+      <h5 class="card-header">UzAliDev</h5>
+      <div class="card-body">
+        <h5 class="card-title">Assalomu alaykum</h5>
+        <p class="card-text">Siz UzAliDev saytiga xush kelibsiz!.</p>
+        <p class="card-text">Saytga kirish uchun ro'yxatdan o'tishingiz kerak!</p>
+        <a href="{% url 'login' %}" class="btn btn-primary">Saytga kirish</a>
+      </div>
+    </div>
+    {% endif %}
+{% endblock content %}
