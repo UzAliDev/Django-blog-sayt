@@ -4,4 +4,4 @@ Muallif: Yulchiboev Abduvali;
 Murabbiy: Narzullayev Anvar;
 Bloglar uchun foydalansa boladi;
 Postlar joylash uchun foydalaniladi;
-Yanglik kiritib
+Yanglik kiritib ishlatish mumkin.
